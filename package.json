@@ -1,0 +1,23 @@
+{
+  "name": "jog-helper",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "author": "Tasztalos69 <tasztalos69@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --minify --platform=node --outfile=dist/main.js",
+    "start": "yarn build && node dist/main.js"
+  },
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "inquirer": "^9.1.4",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.9",
+    "@types/yargs": "^17.0.14",
+    "esbuild": "^0.15.15"
+  }
+}
