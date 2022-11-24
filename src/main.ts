@@ -19,7 +19,9 @@ const main = async () => {
   const filename = argv._[0] || "jog.txt";
   try {
     // Load file
-    const buffer = await fs.readFile(path.join(__dirname, filename as string));
+    const buffer = await fs.readFile(
+      path.join(process.cwd(), filename as string)
+    );
     const questions = buffer
       .toString()
       .split("\n")
