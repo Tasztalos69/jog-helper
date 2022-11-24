@@ -23,7 +23,7 @@ yarn global add jog-helper
 ```bash
 jog-helper <filename>
 ```
-Where filename is the txt file with the answers. Defaults to `jog.txt`.
+Where filename is the `.txt` file with the answers. Defaults to `jog.txt`.
 
 ## Building yourself
 
